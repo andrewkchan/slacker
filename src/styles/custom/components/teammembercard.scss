@@ -1,0 +1,20 @@
+.member-card {
+    @include flex(flex-start, flex-start);
+    border-top: 1px solid #e8e8e8;
+    padding: 1rem 5px;
+
+    &-thumbnail {
+        @include size(4.5rem, 4.5rem);
+        @include border-radius(5px, 5px, 5px, 5px);
+        background-color: #F6F6F6;
+        margin-right: 1rem;
+        padding: 0.5rem;
+        font-size: 4rem;
+        text-align: center;
+    }
+    &-info-section {
+        margin: 0.2em 0;
+    }
+
+
+}

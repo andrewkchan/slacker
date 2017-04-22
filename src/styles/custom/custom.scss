@@ -1,0 +1,59 @@
+//usual reset stuff
+*,
+*:before,
+*:after,
+ul,
+li,
+a,
+button,
+input,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+img,
+image,
+svg,
+path,
+g,
+canvas {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: transparent;
+	border: none;
+	text-decoration: none;
+	font-family: 'Roboto';
+	user-select: none;
+	list-style: none;
+	position: relative;
+	color: #555459;
+}
+
+a {
+	&.important {
+		font-weight: 500;
+		color: #2C2D30;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+@import "utils/utils";
+@import "constants/constants";
+
+@import "components/content";
+@import "components/teamheader";
+@import "components/navbar";
+
+
+@import "components/fluidinput";
+@import "components/btn";
+
+@import "components/teammembercard";
+@import "components/teammemberdetails";
+@import "components/updatemember";

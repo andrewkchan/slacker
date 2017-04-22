@@ -1,0 +1,22 @@
+.update-member {
+    &-header {
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+    &-submit {
+        @include flex(flex-start, space-between);
+        padding-left: 1em;
+        padding-right: 3em;
+        .btn {
+            margin-left: 20px;
+        }
+    }
+}
+.member-header-exit-container {
+    cursor: pointer;
+    font-size: 1.4em;
+    font-weight: 100;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}

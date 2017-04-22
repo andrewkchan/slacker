@@ -1,0 +1,15 @@
+.content {
+    @media (min-width: 1024px) {
+        @include size(1024px);
+    }
+    @include border-radius(5px, 5px, 5px, 5px);
+    margin: 80px auto 80px;
+    padding: 1em 20px 50px;
+    background-color: #FFF;
+    border: 1px solid #e8e8e8;
+
+}
+
+html, body {
+    background-color: #FAFAFA;
+}

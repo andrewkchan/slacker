@@ -1,0 +1,54 @@
+.fluid-input {
+    &-container {
+        margin: 25px 0;
+        @include size(80%, 45px);
+        max-width: 450px;
+        position: relative;
+    }
+    &-body {
+        @include size(100%, 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include border-radius(5px, 5px, 5px, 5px);
+        will-change: transform, box-shadow;
+        background-color: $deepBlue-5;
+        transition: 0.2s ease-in-out;
+    }
+    &-input {
+        @include size();
+        @include border-radius(5px, 5px, 5px, 5px);
+        background-color: $deepBlue-5;
+        //font-size: 1.05em;
+        padding: 0 2%;
+
+        &:focus {
+            outline: none;
+        }
+    }
+    &-label {
+        pointer-events: none;
+        @include size(calc(100% - 10%), 100%);
+        @include flex(center, start);
+        position: absolute;
+        font-size: 1em;
+        top: 0;
+        left: 2%;
+        text-transform: capitalize;
+        color: $blue-100;
+        font-weight: 400;
+        transition:
+            transform 0.2s ease-in-out;
+            font-size: 0.2s 0.15s ease-in-out;
+        will-change: transform, font-size;
+    }
+
+    &--active & {
+        &-body {
+          //box-shadow: 0px 2px 10px 0px rgba($deepBlue-100,0.12);
+        }
+        &-label {
+            transform: translateY(-35px);
+        }
+    }
+}

@@ -1,0 +1,69 @@
+.team-header {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    &-add-container {
+        cursor: pointer;
+        font-size: 1.4em;
+        font-weight: 100;
+        position: absolute;
+        right: 8px;
+        top: 8px;
+    }
+}
+
+.team-search {
+    &-container {
+        @include border-radius(5px, 5px, 5px, 5px);
+        background-color: $deepBlue-5;
+        margin: 25px 0;
+        @include size(250px, 45px);
+        position: relative;
+        @include flex(center, flex-start);
+    }
+    &-icon {
+        margin-right: 0.4em;
+        margin-left: 0.4em;
+        font-size: 1.3em;
+    }
+    &-input {
+        @include size();
+        outline: none;
+        font-size: 1.1em;
+    }
+}
+
+.sad {
+    padding: 2rem;
+    text-align: center;
+    flex: 1;
+    color: #ACACAC;
+}
+
+.team-tabs {
+    flex: 1;
+    @include flex(flex-start, space-between);
+}
+
+.team-tab {
+    padding: 1rem;
+    min-width: 30%;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 500;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &-active {
+        cursor: auto;
+        border-top: 1px solid #E8E8E8;
+        border-left: 1px solid #E8E8E8;
+        border-right: 1px solid #E8E8E8;
+        @include border-radius(5px, 5px, 0, 0);
+        color: #2C2D30;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

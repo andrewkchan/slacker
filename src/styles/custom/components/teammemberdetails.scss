@@ -1,0 +1,28 @@
+.member-details {
+    &-container {
+        padding: 1rem;
+        border-top: 1px solid #e8e8e8;
+    }
+    &-header {
+        text-transform: capitalize;
+        font-weight: 500;
+        font-size: 1.3em;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+.role-section {
+    @include flex(flex-start, space-between);
+    width: inherit;
+    color: #818181;
+    padding: 0.5rem;
+    border-bottom: 1px solid #E8E8E8;
+    &-active {
+        color: #2C2D30;
+    }
+
+    .role-section-label {
+        color: inherit;
+    }
+}
