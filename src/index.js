@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./components/App";
+import Message from "./components/Message";
 import './styles/main.scss';
 
 ReactDOM.render(
-    <App />,
+    <Message />,
     document.getElementById("main")
 );
