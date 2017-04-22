@@ -7,7 +7,11 @@ class Message extends React.Component {
     render() {
         return (
             <div className="message">
-                <p>This is a message</p>
+                <div className="message-thumbnail">
+                </div>
+                <div className="message-info-section">
+                    <p>This is a message</p>
+                </div>
             </div>
         );
     }
