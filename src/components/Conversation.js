@@ -9,11 +9,9 @@ class Conversation extends React.Component {
         return (
             <div>
                 <ul>
-                    <li><Message /></li>
-                    <li><Message /></li>
-                    <li><Message /></li>
-                    <li><Message /></li>
-                    <li><Message /></li>
+                    {this.props.messages.map((message) => {
+                      return <li><Message text={message}/></li>;
+                    })}
                 </ul>
             </div>
         );

@@ -10,7 +10,7 @@ class Message extends React.Component {
                 <div className="message-thumbnail">
                 </div>
                 <div className="message-info-section">
-                    <p>This is a message</p>
+                    <p>{this.props.text}</p>
                 </div>
             </div>
         );
