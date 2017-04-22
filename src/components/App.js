@@ -8,7 +8,7 @@ class App extends React.Component {
     }
     render() {
         return (
-            <div>
+            <div className="content">
                 <Conversation messages={this.state.messages}/>
                 <div className="message-input">
                     <input

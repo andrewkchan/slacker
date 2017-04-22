@@ -1,4 +1,5 @@
 import React from "react";
+import Emojis from "../components/Emojis";
 
 class Message extends React.Component {
     constructor(props) {
@@ -11,7 +12,9 @@ class Message extends React.Component {
                 </div>
                 <div className="message-info-section">
                     <p>{this.props.text}</p>
+                    <Emojis />
                 </div>
+
             </div>
         );
     }
