@@ -1,5 +1,5 @@
 import React from "react";
-import Emojis from "../components/Emojis";
+import MessageMenu from "../components/MessageMenu";
 
 class Message extends React.Component {
     constructor(props) {
@@ -12,7 +12,7 @@ class Message extends React.Component {
                 </div>
                 <div className="message-info-section">
                     <p>{this.props.text}</p>
-                    <Emojis />
+                    <MessageMenu />
                 </div>
 
             </div>

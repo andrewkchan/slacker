@@ -1,6 +1,6 @@
 import React from "react";
 
-class Emojis extends React.Component {
+class MessageMenu extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -66,14 +66,17 @@ class Emojis extends React.Component {
                 <div className="emojis-active">
                     {emojis}
                 </div>
-                <div className="emojis-button emojis-add" onClick={() => { this.setState({showMenu: !this.state.showMenu}); }}>
-                    <span>+</span><i className="icon ion-android-happy" />
-                    {this.renderMenu()}
+                <div className="message-menu">
+                    <div className="message-menu-item emojis-add" onClick={() => { this.setState({showMenu: !this.state.showMenu}); }}>
+                        <span>+</span><i className="icon ion-android-happy" />
+                        {this.renderMenu()}
+                    </div>
+                    <div className="message-menu-item">
+                    </div>
                 </div>
-
             </div>
         );
     }
 }
 
-export default Emojis;
+export default MessageMenu;

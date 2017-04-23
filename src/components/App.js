@@ -1,4 +1,5 @@
 import React from "react";
+import Banner from "../components/Banner";
 import Conversation from "../components/Conversation";
 
 class App extends React.Component {
@@ -9,7 +10,8 @@ class App extends React.Component {
     render() {
         return (
             <div className="content">
-                <Conversation messages={this.state.messages}/>
+                <Banner messages={this.state.messages} />
+                <Conversation messages={this.state.messages} />
                 <div className="message-input">
                     <input
                         className="message-input-input"
