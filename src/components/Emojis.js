@@ -14,7 +14,7 @@ class Emojis extends React.Component {
         return (
             <div
                 className="emojis-button"
-                onClick={() => { this.setState({ ...this.state, [type]: this.state[type] - 1 }); }}
+                onClick={() => { this.setState({ [type]: this.state[type] - 1 }); }}
             >
                 <img className="emojis-img" src={imgSrc} />
                 {this.state[type]}
@@ -26,17 +26,17 @@ class Emojis extends React.Component {
             return (
                 <div className="emojis-menu">
                     <div className="emojis-menu-add" onClick={() => {
-                        this.setState({ ...this.state, sadParrot: this.state.sadParrot + 1 });
+                        this.setState({ sadParrot: this.state.sadParrot + 1 });
                     }}>
                         <img className="emojis-img" src="/img/sadparrot.gif" />
                     </div>
                     <div className="emojis-menu-add" onClick={() => {
-                        this.setState({ ...this.state, parrot: this.state.parrot + 1 });
+                        this.setState({ parrot: this.state.parrot + 1 });
                     }}>
                         <img className="emojis-img" src="/img/parrot.gif" />
                     </div>
                     <div className="emojis-menu-add" onClick={() => {
-                        this.setState({ ...this.state, hug: this.state.hug + 1 });
+                        this.setState({ hug: this.state.hug + 1 });
                     }}>
                         <img className="emojis-img" src="/img/hug.jpg" />
                     </div>
@@ -66,10 +66,11 @@ class Emojis extends React.Component {
                 <div className="emojis-active">
                     {emojis}
                 </div>
-                <div className="emojis-button" onClick={() => { this.setState({...this.state, showMenu: !this.state.showMenu}); }}>
-                    +:)
+                <div className="emojis-button emojis-add" onClick={() => { this.setState({showMenu: !this.state.showMenu}); }}>
+                    <span>+</span><i className="icon ion-android-happy" />
+                    {this.renderMenu()}
                 </div>
-                {this.renderMenu()}
+
             </div>
         );
     }

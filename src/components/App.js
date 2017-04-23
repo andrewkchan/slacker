@@ -14,6 +14,7 @@ class App extends React.Component {
                     <input
                         className="message-input-input"
                         type="text"
+                        placeholder="Message Mark Zuckerberg"
                         onChange={(event)=> {
                             this.setState({text: event.target.value});
                             console.log(this.state.text);

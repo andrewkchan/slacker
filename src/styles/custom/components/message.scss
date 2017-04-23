@@ -17,7 +17,14 @@
     &-info-section {
         margin: 0.2em 0;
     }
-
+    .emojis-add {
+        display: none;
+    }
+    &:hover {
+        .emojis-add {
+            display: block;
+        }
+    }
 
 }
 
@@ -26,25 +33,42 @@
         cursor: pointer;
         @include border-radius(5px, 5px, 5px, 5px);
         border: 1px solid #e8e8e8;
-        background-color: #f6f6f6;
+        &:hover {
+            background-color: #f6f6f6;
+        }
+
         margin-right: 1rem;
-        width: 3rem;
+        width: 2.5rem;
     }
     &-img {
-        @include size(auto, 1rem);
+        @include size(auto, 0.9rem);
     }
     &-active {
         @include flex(center, flex-start, row);
     }
     &-menu {
-
         @include flex(center, flex-start, row);
+        @include border-radius(5px, 5px, 5px, 5px);
+        box-shadow: $container-shadow;
+        border: 1px solid #e8e8e8;
+        position: absolute;
+        z-index: 10;
+        background-color: #fff;
         &-add {
             cursor: pointer;
             margin-right: 1rem;
+            padding: 0.2rem;
             &:hover {
                 background-color: #e8e8e8;
             }
         }
+    }
+    &-add {
+        box-shadow: $button-shadow;
+        width: 1.8rem;
+        text-align: center;
+        padding: 0.1rem;
+        background-color: #fff;
+
     }
 }
