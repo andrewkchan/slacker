@@ -17,12 +17,23 @@
     &-info-section {
         margin: 0.2em 0;
     }
-    .emojis-add {
+    &-menu {
         display: none;
+        @include border-radius(5px, 5px, 5px, 5px);
+        background-color: #fff;
+        border: 1px solid #e8e8e8;
+        width: 1.8rem;
+        &-item {
+            cursor: pointer;
+            @include border-radius(5px, 5px, 5px, 5px);
+        }
     }
     &:hover {
-        .emojis-add {
+        .message-menu {
             display: block;
+            &-item {
+                background-color: #f6f6f6;
+            }
         }
     }
 
